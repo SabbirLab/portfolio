@@ -23,7 +23,7 @@ window.CERTIFICATES = [
      issuer: "The Mars Society",
        date: "URC-2025",
    category: "Mars Rover",
-       file: "urc_certificate",
+       file: "urc_certificate.jpg",
        link: "https://www.marssociety.org/"
    },
 ];
