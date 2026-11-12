@@ -142,6 +142,24 @@
     .skill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
     .skill-list span{border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.8rem;color:var(--text)}
 
+    /* certificates styles */
+    .cert-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+    .cert-filter-btn{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 16px;color:var(--muted);cursor:pointer;transition:all .2s}
+    .cert-filter-btn:hover,.cert-filter-btn.active{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+    .cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+    .cert-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+    .cert-card:hover{transform:translateY(-6px);border-color:rgba(201,242,77,.4)}
+    .cert-media{position:relative;height:180px;background:var(--bg-soft);border-bottom:1px solid var(--line);overflow:hidden;display:grid;place-items:center}
+    .cert-media img{width:100%;height:100%;object-fit:cover}
+    .cert-body{padding:20px;display:flex;flex-direction:column;flex:1}
+    .cert-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+    .cert-card h3{font-size:1.1rem;margin-bottom:6px}
+    .cert-issuer{color:var(--muted);font-size:.9rem;margin-bottom:16px}
+    .cert-links{display:flex;gap:16px;margin-top:auto}
+    .cert-links a{color:var(--accent);font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center}
+    .cert-links a:hover{text-decoration:underline;text-underline-offset:4px}
+    .cert-empty{color:var(--muted);font-family:var(--mono);font-size:.9rem}
+
     /* contact + footer */
     .contact-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--accent);margin-bottom:18px;text-transform:uppercase}
     .contact-title{font-size:clamp(2.2rem,6vw,4.2rem);font-weight:800;line-height:1.05;margin-bottom:40px}
@@ -220,6 +238,7 @@
       <a href="#experience">Experience</a>
       <a href="#achievements">Achievements</a>
       <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
       <a href="#cv">CV</a>
       <a href="#contact" class="nav-contact">Let's talk</a>
     </nav>
@@ -454,6 +473,7 @@
         <a href="https://www.instagram.com/yes_sabbir/" target="_blank" rel="noopener noreferrer">Instagram<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
         <a href="https://x.com/yes_sabbir" target="_blank" rel="noopener noreferrer">X<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
         <a href="https://www.facebook.com/s.ahmed360" target="_blank" rel="noopener noreferrer">Facebook<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+      </div>
     </section>
   </main>
 
@@ -463,6 +483,7 @@
     <a href="#home" style="display:inline-flex;align-items:center">Back to top<svg class="ic" aria-hidden="true"><use href="#i-up"/></svg></a>
   </footer>
 
+  <script src="certificate.js"></script>
   <script>
     (function () {
       var toggle = document.querySelector(".menu-toggle");
