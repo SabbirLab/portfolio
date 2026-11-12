@@ -18,12 +18,12 @@
   Keep the comma after every closing brace }.
 */
 window.CERTIFICATES = [
-  // {
-  //   title: "Certificate title here",
-  //   issuer: "Organization name",
-  //   date: "2025-07",
-  //   category: "Course",
-  //   file: "my-certificate.jpg",
-  //   link: "https://example.com/verify/123"
-  // },
+   {
+      title: "URC 2025 Participation Certificate",
+     issuer: "The Mars Society",
+       date: "URC-2025",
+   category: "Mars Rover",
+       file: "urc_certificate",
+       link: "https://www.marssociety.org/"
+   },
 ];
