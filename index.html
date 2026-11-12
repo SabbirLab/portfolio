@@ -143,22 +143,23 @@
     .skill-list span{border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.8rem;color:var(--text)}
 
     /* certificates styles */
-    .cert-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
-    .cert-filter-btn{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 16px;color:var(--muted);cursor:pointer;transition:all .2s}
-    .cert-filter-btn:hover,.cert-filter-btn.active{background:var(--accent);color:var(--bg);border-color:var(--accent)}
-    .cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+    .cert-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+    .cert-filters button{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;background:none;color:var(--text);border:1px solid var(--line);border-radius:99px;padding:9px 16px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+    .cert-filters button:hover{border-color:var(--accent)}
+    .cert-filters button[aria-pressed="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+    .cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
     .cert-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
-    .cert-card:hover{transform:translateY(-6px);border-color:rgba(201,242,77,.4)}
-    .cert-media{position:relative;height:180px;background:var(--bg-soft);border-bottom:1px solid var(--line);overflow:hidden;display:grid;place-items:center}
+    .cert-card:hover{transform:translateY(-4px);border-color:rgba(201,242,77,.4)}
+    .cert-media{display:grid;place-items:center;aspect-ratio:4/3;background:var(--bg-soft);border-bottom:1px solid var(--line);overflow:hidden;color:var(--accent)}
     .cert-media img{width:100%;height:100%;object-fit:cover}
-    .cert-body{padding:20px;display:flex;flex-direction:column;flex:1}
-    .cert-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
-    .cert-card h3{font-size:1.1rem;margin-bottom:6px}
-    .cert-issuer{color:var(--muted);font-size:.9rem;margin-bottom:16px}
-    .cert-links{display:flex;gap:16px;margin-top:auto}
-    .cert-links a{color:var(--accent);font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center}
-    .cert-links a:hover{text-decoration:underline;text-underline-offset:4px}
-    .cert-empty{color:var(--muted);font-family:var(--mono);font-size:.9rem}
+    .cert-media svg{width:56px;height:56px}
+    .cert-body{padding:20px;display:flex;flex-direction:column;flex:1;gap:6px}
+    .cert-body h3{font-size:1.02rem;line-height:1.35}
+    .cert-body p{color:var(--muted);font-size:.9rem}
+    .cert-meta{font-family:var(--mono);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:auto;padding-top:10px}
+    .cert-verify{align-self:flex-start;margin-top:8px;color:var(--accent);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center}
+    .cert-verify:hover{text-decoration:underline;text-underline-offset:4px}
+    .cert-empty{color:var(--muted)}
 
     /* contact + footer */
     .contact-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--accent);margin-bottom:18px;text-transform:uppercase}
@@ -194,12 +195,14 @@
     .pill-solid:hover{background:transparent;color:var(--accent)}
     .cv-actions[hidden]{display:none}
 
-    @media(max-width:860px){
-      .about-grid,.education-grid,.project-grid,.achievement-grid{grid-template-columns:1fr}
-      .about-portrait,.portrait-fallback{width:min(240px,80%);height:auto;margin-inline:auto}
+    @media(max-width:1060px){
       .menu-toggle{display:flex}
       .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:18px;padding:22px 28px 26px;background:#151713;border-bottom:1px solid var(--line)}
       .nav-links.open{display:flex}
+    }
+    @media(max-width:860px){
+      .about-grid,.education-grid,.project-grid,.achievement-grid{grid-template-columns:1fr}
+      .about-portrait,.portrait-fallback{width:min(240px,80%);height:auto;margin-inline:auto}
       .hero-bottom{flex-direction:column;align-items:flex-start}
       .about-meta{grid-template-columns:1fr}
       .topline-year{display:none}
@@ -343,12 +346,12 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-wifi"><span>07</span><div class="signal-rings"></div><b>Course<br>Project</b><img class="project-photo" src="assets/autocad.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
+          <div class="project-visual visual-wifi"><span>07</span><div class="signal-rings"></div><b>Smart<br>farming</b><img class="project-photo" src="assets/project-poultry.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
-            <div class="project-tags"><span>Autocad project</span><span>Academmic Course</span></div>
-            <h3>Electrical Design and Planning of a Multi-Storey Residential Building⚡🏢</h3>
-            <p>This project presents the complete electrical design and planning of a 6-storey residential building, including lighting calculations, electrical load analysis, conduit layout, switchboard design, SDB/MDB calculations, single line diagram (SLD), earthing system, lightning protection, and fire safety planning. The project focuses on ensuring safety, efficiency, functionality, and compliance with standard electrical engineering practices.</p>
-             <div class="project-links"><a href="https://github.com/SabbirLab" target="_blank" rel="noopener noreferrer">View on GitHub<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></div>
+            <div class="project-tags"><span>Group BSc project</span><span>IoT</span></div>
+            <h3>Integrated Poultry Management System for Sustainable Farming</h3>
+            <p>Our group's BSc project: an integrated system for managing poultry farms more sustainably.</p>
+            <div class="project-links"><span>Write-up on request</span></div>
           </div>
         </article>
 
@@ -357,7 +360,7 @@
           <div class="project-info">
             <div class="project-tags"><span>ESP32</span><span>MATLAB</span><span>Circuits</span></div>
             <h3>More Hands-on Builds</h3>
-            <p>An ESP32 RC car driven over ESP-NOW.</p>
+            <p>An ESP32 RC car driven over ESP-NOW, a matrix keypad interface, and an RLC circuit analysis in MATLAB.</p>
             <div class="project-links"><a href="https://github.com/SabbirLab" target="_blank" rel="noopener noreferrer">Browse GitHub<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></div>
           </div>
         </article>
@@ -368,9 +371,9 @@
     <section class="experience section-wrap section-pad" id="experience">
       <div class="section-heading"><span class="section-number">03</span><h2>Where I've <span class="muted">contributed.</span></h2></div>
       <div class="timeline">
-        <article class="timeline-item"><div class="timeline-date">Research, 2025</div><div><h3>Group Team Lead, Networking Team</h3><h4>CENTeR</h4><p>Contributing to research and team projects related to emerging networks and technologies, including simulation-based exploration with CupCarbon.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">Research, present</div><div><h3>Group Team Lead, Networking Team</h3><h4>CENTeR</h4><p>Contributing to research and team projects related to emerging networks and technologies, including simulation-based exploration with CupCarbon.</p></div></article>
         <article class="timeline-item"><div class="timeline-date">2024 to 2025</div><div><h3>Electrical Sub-Team Member</h3><h4>UIU Mars Rover Team</h4><p>Worked with the electrical team on rover electronics, embedded prototyping, communication, integration, documentation, and competition preparation.</p></div></article>
-        <article class="timeline-item"><div class="timeline-date">University activities</div><div><h3>Student Leadership and Engagement</h3><h4>United International University</h4><p>Member, UIU English Language Club (HR Department); Batch Ambassador, Department of EEE and EEE Day 2024; and Event Ambassador for Interactive Cares & many others.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">University activities</div><div><h3>Student Leadership and Engagement</h3><h4>United International University</h4><p>Member, UIU English Language Club (HR Department); Batch Ambassador, Department of EEE and EEE Day 2024; and Event Ambassador for Interactive Cares.</p></div></article>
       </div>
     </section>
 
@@ -379,12 +382,12 @@
       <div class="achievement-grid">
 
         <article class="achievement-card">
-           <div class="achievement-media"><img src="assets/urc-2025.jpg" alt="UIU Mars Rover Team celebrating with Bangladesh and UIU flags at URC 2025" width="1469" height="1170" loading="lazy"></div>
+          <div class="achievement-media"><img src="assets/urc-2026.jpg" alt="UIU Mars Rover Team celebrating with Bangladesh and UIU flags next to the rover at URC 2026" width="1469" height="1231" loading="lazy"></div>
           <div class="achievement-body">
-            <span class="achievement-year">2025, URC</span>
-            <strong class="achievement-stat">06<span>th</span></strong>
+            <span class="achievement-year">2026, URC</span>
+            <strong class="achievement-stat">03<span>rd</span></strong>
             <h3>Worldwide</h3>
-            <p>University Rover Challenge 2025: 6th worldwide and Best Asian Team for the fourth consecutive year. Science Task: 100/100 and Best Scientists Team recognition.</p>
+            <p>University Rover Challenge 2026: 3rd place worldwide with Best Autonomous System recognition. The team announcement calls it the first podium finish for an Asian team in 20 years.</p>
           </div>
         </article>
 
@@ -398,10 +401,16 @@
           </div>
         </article>
 
-      
+        <article class="achievement-card">
+          <div class="achievement-body">
+            <span class="achievement-year">2025, URC</span>
+            <strong class="achievement-stat">06<span>th</span></strong>
+            <h3>Worldwide</h3>
+            <p>University Rover Challenge 2025: 6th worldwide and Best Asian Team for the fourth consecutive year. Science Task: 100/100 and Best Scientists Team recognition.</p>
+          </div>
+        </article>
 
         <article class="achievement-card">
-          <div class="achievement-media"><img src="assets/uiu-waiver.jpg" alt="United International University" width="1170" height="420" loading="lazy"></div>
           <div class="achievement-body">
             <span class="achievement-year">Academic</span>
             <strong class="achievement-stat">25<span>%</span></strong>
@@ -466,13 +475,13 @@
     <section class="contact section-wrap section-pad" id="contact">
       <div class="contact-kicker">Have a project, idea, or opportunity?</div>
       <h2 class="contact-title">Let's make<br>something <span class="accent">matter.</span></h2>
-      <div class="contact-bottom"><p>I'm open to meaningful conversations around engineering, research, robotics, and collaboration.</p><a class="email-link" href="mailto:sahmedeee7@gmail.com">sahmedeee7@gmail.com </a></div>
+      <div class="contact-bottom"><p>I'm open to meaningful conversations around engineering, research, robotics, and collaboration.</p><a class="email-link" href="mailto:sahmedeee7@gmail.com">sahmedeee7@gmail.com</a></div>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/sabbirahmed360/" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
         <a href="https://github.com/SabbirLab" target="_blank" rel="noopener noreferrer">GitHub<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
         <a href="https://www.instagram.com/yes_sabbir/" target="_blank" rel="noopener noreferrer">Instagram<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
         <a href="https://x.com/yes_sabbir" target="_blank" rel="noopener noreferrer">X<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
-        <a href="https://www.facebook.com/s.ahmed360" target="_blank" rel="noopener noreferrer">Facebook<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+        <a href="https://www.facebook.com/uiumarsrover/" target="_blank" rel="noopener noreferrer">UIU Mars Rover<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
       </div>
     </section>
   </main>
@@ -498,6 +507,82 @@
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && nav.classList.contains("open")) { setMenu(false); toggle.focus(); }
       });
+
+      /* certificates renderer */
+      (function () {
+        var grid = document.getElementById("cert-grid");
+        if (!grid) return;
+        var filters = document.getElementById("cert-filters");
+        var empty = document.getElementById("cert-empty");
+        var list = (window.CERTIFICATES || []).slice();
+        if (!list.length) { empty.hidden = false; return; }
+        list.sort(function (a, b) { return String(b.date || "").localeCompare(String(a.date || "")); });
+        var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        var ICON = '<svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h26l12 12v44H14z"/><path d="M40 4v12h12"/><path d="M22 30h22M22 38h22M22 46h14"/></svg>';
+        function fmt(d) {
+          var m = /^(\d{4})(?:-(\d{2}))?/.exec(d || "");
+          if (!m) return d || "";
+          return (m[2] ? months[+m[2] - 1] + " " : "") + m[1];
+        }
+        function el(tag, cls, text) {
+          var n = document.createElement(tag);
+          if (cls) n.className = cls;
+          if (text) n.textContent = text;
+          return n;
+        }
+        function card(c) {
+          var art = el("article", "cert-card");
+          var path = c.file ? "assets/certificates/" + encodeURI(c.file) : "";
+          var media = el(path ? "a" : "div", "cert-media");
+          function icon() { media.insertAdjacentHTML("beforeend", ICON); }
+          if (path) {
+            media.href = path; media.target = "_blank"; media.rel = "noopener noreferrer";
+            media.setAttribute("aria-label", "Open certificate: " + c.title);
+          }
+          if (path && !/\.pdf$/i.test(c.file)) {
+            var img = document.createElement("img");
+            img.src = path; img.alt = ""; img.loading = "lazy";
+            img.onerror = function () { img.remove(); icon(); };
+            media.appendChild(img);
+          } else { icon(); }
+          art.appendChild(media);
+          var body = el("div", "cert-body");
+          body.appendChild(el("h3", "", c.title));
+          if (c.issuer) body.appendChild(el("p", "", c.issuer));
+          if (c.link) {
+            var v = el("a", "cert-verify", "Verify");
+            v.href = c.link; v.target = "_blank"; v.rel = "noopener noreferrer";
+            v.insertAdjacentHTML("beforeend", '<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg>');
+            body.appendChild(v);
+          }
+          var meta = [fmt(c.date), c.category].filter(Boolean).join("  |  ");
+          if (meta) body.appendChild(el("div", "cert-meta", meta));
+          art.appendChild(body);
+          return art;
+        }
+        function render(cat) {
+          grid.textContent = "";
+          list.forEach(function (c) { if (cat === "All" || c.category === cat) grid.appendChild(card(c)); });
+        }
+        var cats = ["All"];
+        list.forEach(function (c) { if (c.category && cats.indexOf(c.category) < 0) cats.push(c.category); });
+        if (cats.length > 2) {
+          filters.hidden = false;
+          cats.forEach(function (cat, i) {
+            var b = el("button", "", cat);
+            b.type = "button";
+            b.setAttribute("aria-pressed", String(i === 0));
+            b.addEventListener("click", function () {
+              [].forEach.call(filters.children, function (x) { x.setAttribute("aria-pressed", "false"); });
+              b.setAttribute("aria-pressed", "true");
+              render(cat);
+            });
+            filters.appendChild(b);
+          });
+        }
+        render("All");
+      })();
+
       document.getElementById("year").textContent = new Date().getFullYear();
       if (location.protocol !== "file:") {
         fetch("assets/Sabbir-Ahmed-CV.pdf", { method: "HEAD" }).then(function (r) {
