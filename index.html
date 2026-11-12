@@ -155,6 +155,27 @@
     .site-footer a:hover{color:var(--accent)}
     .footer-links{display:flex;gap:20px}
 
+
+    /* project photos: drop assets/project-*.jpg to replace the pattern art */
+    .project-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .project-visual.has-photo b,.project-visual.has-photo .visual-lines,.project-visual.has-photo .signal-rings,.project-visual.has-photo .waveform,.project-visual.has-photo .iot-nodes{display:none}
+    .project-visual.has-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,17,15,.55),transparent 55%);z-index:1}
+
+    /* education pictures */
+    .edu-logo,.edu-photo,.edu-fallback{width:72px;height:72px;border-radius:50%;flex-shrink:0}
+    .edu-photo{object-fit:cover;border:1px solid var(--line)}
+    .edu-fallback{display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--accent);font-family:var(--mono);font-size:.8rem;letter-spacing:.06em}
+
+    /* cv */
+    .cv-card{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px}
+    .cv-icon{width:64px;height:64px;color:var(--accent)}
+    .cv-card h3{font-size:1.25rem;margin-bottom:6px}
+    .cv-card p{color:var(--muted);font-size:.95rem;max-width:520px}
+    .cv-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .pill-solid{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:500}
+    .pill-solid:hover{background:transparent;color:var(--accent)}
+    .cv-actions[hidden]{display:none}
+
     @media(max-width:860px){
       .about-grid,.education-grid,.project-grid,.achievement-grid{grid-template-columns:1fr}
       .about-portrait,.portrait-fallback{width:min(240px,80%);height:auto;margin-inline:auto}
@@ -164,12 +185,22 @@
       .hero-bottom{flex-direction:column;align-items:flex-start}
       .about-meta{grid-template-columns:1fr}
       .topline-year{display:none}
+      .cv-card{grid-template-columns:1fr;gap:18px}
     }
     @media(prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}
       *{transition-duration:.01ms!important}
     }
   </style>
+  <script>
+    function fb(img, text) {
+      var d = document.createElement('div');
+      d.className = 'edu-fallback';
+      d.textContent = text;
+      d.setAttribute('aria-hidden', 'true');
+      img.replaceWith(d);
+    }
+  </script>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -189,6 +220,7 @@
       <a href="#experience">Experience</a>
       <a href="#achievements">Achievements</a>
       <a href="#education">Education</a>
+      <a href="#cv">CV</a>
       <a href="#contact" class="nav-contact">Let's talk</a>
     </nav>
   </header>
@@ -204,6 +236,7 @@
           <div class="hero-links">
             <a class="pill" href="https://github.com/SabbirLab" target="_blank" rel="noopener noreferrer">GitHub<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
             <a class="pill" href="https://www.linkedin.com/in/sabbirahmed360/" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+            <a class="pill" href="#cv">CV</a>
             <a class="pill" href="mailto:sahmedeee7@gmail.com">Email</a>
           </div>
         </div>
@@ -241,7 +274,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-wifi"><span>02</span><div class="signal-rings"></div><b>Wi-Fi<br>RSSI lab</b></div>
+          <div class="project-visual visual-wifi"><span>02</span><div class="signal-rings"></div><b>Wi-Fi<br>RSSI lab</b><img class="project-photo" src="assets/project-wifi.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>ESP32</span><span>MATLAB</span><span>Numerical methods</span></div>
             <h3>Live Wi-Fi Signal Strength Mapping</h3>
@@ -251,7 +284,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-dsp"><span>03</span><div class="waveform"></div><b>Voice<br>access</b></div>
+          <div class="project-visual visual-dsp"><span>03</span><div class="waveform"></div><b>Voice<br>access</b><img class="project-photo" src="assets/project-voice.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>DSP</span><span>MATLAB</span></div>
             <h3>Voice Recognition Access Control</h3>
@@ -261,7 +294,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-iot"><span>04</span><div class="iot-nodes"><i></i><i></i><i></i><i></i></div><b>Bus alert<br>system</b></div>
+          <div class="project-visual visual-iot"><span>04</span><div class="iot-nodes"><i></i><i></i><i></i><i></i></div><b>Bus alert<br>system</b><img class="project-photo" src="assets/project-bus.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>ESP32</span><span>Bluetooth</span><span>Sensors</span></div>
             <h3>ESP32 Bus Alert System</h3>
@@ -271,7 +304,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual"><span>05</span><div class="visual-lines"></div><b>100 VA<br>transformer</b></div>
+          <div class="project-visual"><span>05</span><div class="visual-lines"></div><b>100 VA<br>transformer</b><img class="project-photo" src="assets/project-transformer.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>Power</span><span>Hardware</span></div>
             <h3>100 VA Step-down Transformer</h3>
@@ -281,7 +314,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-iot"><span>06</span><div class="iot-nodes"><i></i><i></i><i></i><i></i></div><b>Connected<br>systems</b></div>
+          <div class="project-visual visual-iot"><span>06</span><div class="iot-nodes"><i></i><i></i><i></i><i></i></div><b>Connected<br>systems</b><img class="project-photo" src="assets/project-iot.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>IoT</span><span>Simulation</span></div>
             <h3>IoT and Network Simulations</h3>
@@ -291,7 +324,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-wifi"><span>07</span><div class="signal-rings"></div><b>Smart<br>farming</b></div>
+          <div class="project-visual visual-wifi"><span>07</span><div class="signal-rings"></div><b>Smart<br>farming</b><img class="project-photo" src="assets/project-poultry.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>Group BSc project</span><span>IoT</span></div>
             <h3>Integrated Poultry Management System for Sustainable Farming</h3>
@@ -301,7 +334,7 @@
         </article>
 
         <article class="project-card">
-          <div class="project-visual visual-dsp"><span>08</span><div class="waveform"></div><b>Small<br>builds</b></div>
+          <div class="project-visual visual-dsp"><span>08</span><div class="waveform"></div><b>Small<br>builds</b><img class="project-photo" src="assets/project-builds.jpg" alt="" loading="lazy" onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()"></div>
           <div class="project-info">
             <div class="project-tags"><span>ESP32</span><span>MATLAB</span><span>Circuits</span></div>
             <h3>More Hands-on Builds</h3>
@@ -374,14 +407,39 @@
         <div class="education-list">
           <article>
             <div class="edu-row">
-              <img class="edu-logo" src="assets/uiu-logo.png" alt="United International University logo" width="60" height="60" loading="lazy">
+              <img class="edu-logo" src="assets/uiu-logo.png" alt="United International University logo" width="72" height="72" loading="lazy">
               <div><span class="mono">Current</span><h3>BSc in Electrical and Electronic Engineering</h3><p>United International University</p></div>
             </div>
           </article>
-          <article><span class="mono">Diploma</span><h3>Electrical Technology</h3><p>Gopalganj Polytechnic Institute</p></article>
-          <article><span class="mono">2016 to 2018</span><h3>Secondary School Certificate</h3><p>Al-Isalah Academy Bagerhat</p></article>
+          <article>
+            <div class="edu-row">
+              <img class="edu-photo" src="assets/diploma-institute.jpg" alt="Gopalganj Polytechnic Institute" width="72" height="72" loading="lazy" onerror="fb(this,'GPI')">
+              <div><span class="mono">Diploma</span><h3>Electrical Technology</h3><p>Gopalganj Polytechnic Institute</p></div>
+            </div>
+          </article>
+          <article>
+            <div class="edu-row">
+              <img class="edu-photo" src="assets/school.jpg" alt="Al-Isalah Academy Bagerhat" width="72" height="72" loading="lazy" onerror="fb(this,'AIA')">
+              <div><span class="mono">2016 to 2018</span><h3>Secondary School Certificate</h3><p>Al-Isalah Academy Bagerhat</p></div>
+            </div>
+          </article>
         </div>
         <div class="toolkit"><span class="mono">Areas and tools I'm exploring</span><div class="skill-list"><span>Embedded Systems</span><span>ESP32</span><span>Arduino</span><span>MATLAB</span><span>IoT</span><span>Robotics</span><span>Digital Signal Processing</span><span>CupCarbon</span><span>Analog Electronics</span><span>VLSI</span><span>Networking</span><span>Renewable Energy</span></div></div>
+      </div>
+    </section>
+
+    <section class="cv section-wrap section-pad" id="cv">
+      <div class="section-heading"><span class="section-number">06</span><h2>My <span class="muted">CV.</span></h2></div>
+      <div class="cv-card">
+        <svg class="cv-icon" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h26l12 12v44H14z"/><path d="M40 4v12h12"/><path d="M22 30h22M22 38h22M22 46h14"/></svg>
+        <div>
+          <h3>Curriculum Vitae</h3>
+          <p>Education, research, rover team work, projects, and skills in one PDF.</p>
+        </div>
+        <div class="cv-actions" id="cv-actions">
+          <a class="pill pill-solid" href="assets/Sabbir-Ahmed-CV.pdf" download>Download CV<svg class="ic" aria-hidden="true"><use href="#i-down"/></svg></a>
+          <a class="pill" href="assets/Sabbir-Ahmed-CV.pdf" target="_blank" rel="noopener noreferrer">View in browser<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </div>
       </div>
     </section>
 
@@ -420,6 +478,15 @@
         if (e.key === "Escape" && nav.classList.contains("open")) { setMenu(false); toggle.focus(); }
       });
       document.getElementById("year").textContent = new Date().getFullYear();
+      if (location.protocol !== "file:") {
+        fetch("assets/Sabbir-Ahmed-CV.pdf", { method: "HEAD" }).then(function (r) {
+          if (!r.ok) throw 0;
+        }).catch(function () {
+          var a = document.getElementById("cv-actions");
+          a.hidden = true;
+          a.parentNode.querySelector("p").textContent = "CV available on request. Send me an email.";
+        });
+      }
     })();
   </script>
 </body>
