@@ -39,13 +39,13 @@ window.CERTIFICATES = [
     title: "Red Hat System Administration I (RH124 - RHA) - Ver. 9.3",
     issuer: "Red Hat",
     date: "May,2025",
-    category: "Basic Course",
+    category: "Red Hat Course",
     file: "redhat_1.jpg",
     link: "https://www.credly.com/badges/4afc87ed-b104-4d96-b11b-2a260a01ede3/linked_in_profile"
   },
   {
     title: "Red Hat System Administration II (RH134 - RHA) - Ver. 9.3",
-    issuer: "Red Hat",
+    issuer: "Red Hat Course",
     date: "May,2025",
     category: "Basic Course",
     file: "redhat_9.3.jpg",
@@ -55,7 +55,7 @@ window.CERTIFICATES = [
     title: "Network Smarter with AI",
     issuer: "Grameenphone Academy",
     date: "April,2026",
-    category: "Basic AI Course",
+    category: "GP Academy",
     file: "certificate-network-smarter-with-ai.pdf",
     link: "https://www.grameenphone.academy/cert/bb5d1174bd26"
   },
@@ -63,7 +63,7 @@ window.CERTIFICATES = [
     title: "AI-Powered Communication",
     issuer: "Grameenphone Academy",
     date: "May,2026",
-    category: "Basic AI Course",
+    category: "GP Academy",
     file: "certificate-ai-powered-communication.pdf",
     link: "https://www.grameenphone.academy/cert/8acb2788c672"
   }
