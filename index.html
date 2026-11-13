@@ -644,7 +644,7 @@
 
       /* ---- hide CV buttons if file is missing (online only) ---- */
       if (location.protocol !== "file:") {
-        fetch("assets/Sabbir-Ahmed-CV.pdf", { method: "HEAD" }).then(function (r) {
+        fetch("assets/sahmed_CV.pdf", { method: "HEAD" }).then(function (r) {
           if (!r.ok) throw 0;
         }).catch(function () {
           var a = $("cv-actions");
