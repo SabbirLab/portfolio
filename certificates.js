@@ -43,4 +43,13 @@ window.CERTIFICATES = [
     file: "redhat_9.3.jpg",
     link: "https://www.credly.com/badges/4b3d2750-67af-4cae-adee-d8adb74ef382/linked_in_profile"
   }
+  ,
+  {
+    title: "ARC 2025 Participation Certificate",
+    issuer: "Space Exploration Society (UKET)",
+    date: "July,2025",
+    category: "Mars Rover",
+    file: "arc_25.jpg",
+    link: "https://www.anatolianrover.space/"
+  }
 ];
