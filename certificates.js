@@ -50,6 +50,21 @@ window.CERTIFICATES = [
     category: "Basic Course",
     file: "redhat_9.3.jpg",
     link: "https://www.credly.com/badges/4b3d2750-67af-4cae-adee-d8adb74ef382/linked_in_profile"
+  },
+  {
+    title: "Network Smarter with AI",
+    issuer: "Grameenphone Academy",
+    date: "April,2026",
+    category: "Basic AI Course",
+    file: "certificate-network-smarter-with-ai.pdf",
+    link: "https://www.grameenphone.academy/cert/bb5d1174bd26"
+  },
+  {
+    title: "AI-Powered Communication",
+    issuer: "Grameenphone Academy",
+    date: "May,2026",
+    category: "Basic AI Course",
+    file: "certificate-ai-powered-communication.pdf",
+    link: "https://www.grameenphone.academy/cert/8acb2788c672"
   }
-  
 ];
