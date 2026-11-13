@@ -20,6 +20,14 @@
 window.CERTIFICATES = [
 
   {
+    title: "URC 2025 Participation Certificate",
+    issuer: "The Mars Society",
+    date: "2025",
+    category: "Mars Rover ",
+    file: "urc_certificate.jpg",
+    link: "https://www.marssociety.org/"
+  },
+  {
     title: "Red Hat System Administration II (RH134 - RHA) - Ver. 9.3",
     issuer: "Red Hat",
     date: "May,2025",
@@ -34,13 +42,5 @@ window.CERTIFICATES = [
     category: "Basic Course",
     file: "redhat_1.jpg",
     link: "https://www.credly.com/badges/4afc87ed-b104-4d96-b11b-2a260a01ede3/linked_in_profile"
-  },
-    {
-    title: "URC 2025 Participation Certificate",
-    issuer: "The Mars Society",
-    date: "2025",
-    category: "Mars Rover ",
-    file: "urc_certificate.jpg",
-    link: "https://www.marssociety.org/"
-  },
+  }
 ];
