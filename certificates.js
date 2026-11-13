@@ -55,7 +55,7 @@ window.CERTIFICATES = [
     issuer: "Grameenphone Academy",
     date: "April,2026",
     category: "GP Academy",
-    file: "certificate-network-smarter-with-ai.pdf",
+    file: "certificate-network-smarter-with-ai.jpg",
     link: "https://www.grameenphone.academy/cert/bb5d1174bd26"
   },
   {
@@ -63,7 +63,7 @@ window.CERTIFICATES = [
     issuer: "Grameenphone Academy",
     date: "May,2026",
     category: "GP Academy",
-    file: "certificate-ai-powered-communication.pdf",
+    file: "certificate-ai-powered-communication.jpg",
     link: "https://www.grameenphone.academy/cert/8acb2788c672"
   }
 ];
