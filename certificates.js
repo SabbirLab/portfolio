@@ -28,6 +28,14 @@ window.CERTIFICATES = [
     link: "https://www.marssociety.org/"
   },
   {
+    title: "ARC 2025 Participation Certificate",
+    issuer: "Space Exploration Society (UKET)",
+    date: "July,2025",
+    category: "Mars Rover",
+    file: "arc_25.jpg",
+    link: "https://www.anatolianrover.space/"
+  },
+  {
     title: "Red Hat System Administration I (RH124 - RHA) - Ver. 9.3",
     issuer: "Red Hat",
     date: "May,2025",
@@ -43,13 +51,5 @@ window.CERTIFICATES = [
     file: "redhat_9.3.jpg",
     link: "https://www.credly.com/badges/4b3d2750-67af-4cae-adee-d8adb74ef382/linked_in_profile"
   }
-  ,
-  {
-    title: "ARC 2025 Participation Certificate",
-    issuer: "Space Exploration Society (UKET)",
-    date: "July,2025",
-    category: "Mars Rover",
-    file: "arc_25.jpg",
-    link: "https://www.anatolianrover.space/"
-  }
+  
 ];
