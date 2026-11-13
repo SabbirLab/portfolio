@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sabbir Ahmed, Electrical Engineer in Progress</title>
+  <title>Sabbir Ahmed, Electrical Engineer in Progress . . .</title>
   <meta name="description" content="Sabbir Ahmed: EEE undergraduate, researcher and robotics enthusiast at United International University, Bangladesh.">
   <meta name="theme-color" content="#10110f">
   <meta property="og:title" content="Sabbir Ahmed, Electrical Engineer in Progress">
@@ -18,7 +18,7 @@
       --bg:#10110f; --bg-soft:#171816; --card:#1b1c1a; --line:rgba(255,255,255,.08);
       --text:#e8e8e4; --muted:#9a9b95; --accent:#c9f24d; --mono:'DM Mono',monospace; --sans:'Manrope',sans-serif;
     }
-    /* Light theme overrides */
+    /* Light theme */
     html[data-theme="light"]{
       --bg:#f4f5f0; --bg-soft:#e8eae1; --card:#ffffff; --line:rgba(0,0,0,.1);
       --text:#1a1c18; --muted:#5c5f57; --accent:#538200;
@@ -42,14 +42,14 @@
     .section-lead{color:var(--muted);max-width:560px;margin:-28px 0 44px}
 
     /* header */
-    .site-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:var(--bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:background .3s}
+    .site-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:background .3s}
     .brand{font-weight:800;font-size:1.25rem;letter-spacing:.02em;display:inline-flex;align-items:center;gap:10px}
     .brand-avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center 22%;border:1px solid var(--line)}
     .brand span{color:var(--accent)}
-    .nav-links{display:flex;gap:22px;align-items:center;font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+    .nav-links{display:flex;gap:20px;align-items:center;font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
     .nav-links a{color:var(--muted);transition:color .2s}
     .nav-links a:hover{color:var(--text)}
-    .nav-links .nav-contact{color:var(--accent);border:1px solid rgba(201,242,77,.35);padding:8px 14px;border-radius:99px}
+    .nav-links .nav-contact{color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);padding:8px 14px;border-radius:99px}
     .nav-links .nav-contact:hover{color:var(--bg);background:var(--accent)}
     .menu-toggle{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
     .menu-toggle span{display:block;width:22px;height:2px;background:var(--text);transition:transform .2s,opacity .2s}
@@ -67,10 +67,10 @@
     .hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-top:44px}
     .hero-intro{max-width:460px;color:var(--muted);font-size:1.05rem}
     .hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-    .pill{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:99px;padding:10px 16px;color:var(--text);transition:background .2s,color .2s,border-color .2s;cursor:pointer}
+    .pill{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:99px;padding:10px 16px;color:var(--text);background:transparent;transition:background .2s,color .2s,border-color .2s}
     .pill:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
     .round-link{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border:1px solid var(--line);border-radius:50%;color:var(--accent);flex-shrink:0;transition:background .2s}
-    .round-link:hover{background:rgba(201,242,77,.1)}
+    .round-link:hover{background:color-mix(in srgb,var(--accent) 10%,transparent)}
     .round-link .ic{margin:0;width:20px;height:20px}
     .hero-index{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;color:var(--muted);margin-top:70px;border-top:1px solid var(--line);padding-top:16px;text-transform:uppercase}
 
@@ -90,15 +90,15 @@
     /* projects */
     .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
     .project-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .25s,border-color .25s;display:flex;flex-direction:column}
-    .project-card:hover{transform:translateY(-6px);border-color:rgba(201,242,77,.4)}
+    .project-card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
     .project-visual{position:relative;height:190px;display:flex;align-items:flex-end;padding:18px;background:var(--bg-soft);border-bottom:1px solid var(--line);overflow:hidden}
     .project-visual>span{position:absolute;top:14px;left:18px;font-family:var(--mono);font-size:.7rem;color:var(--muted);z-index:2}
     .project-visual b{font-family:var(--mono);font-weight:500;font-size:1.05rem;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;position:relative;z-index:2}
     .project-visual.has-img{align-items:center;justify-content:center;padding:14px;background:radial-gradient(circle at 50% 50%,#2a2c27,#171816)}
     .project-visual.has-img img{height:100%;width:auto;aspect-ratio:1/1}
-    .visual-lines{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 26px,rgba(201,242,77,.07) 26px 27px)}
-    .signal-rings{position:absolute;inset:0;background:radial-gradient(circle at 78% 30%,rgba(201,242,77,.18) 0 2px,transparent 3px),radial-gradient(circle at 78% 30%,transparent 14px,rgba(201,242,77,.12) 15px 16px,transparent 17px),radial-gradient(circle at 78% 30%,transparent 30px,rgba(201,242,77,.09) 31px 32px,transparent 33px)}
-    .waveform{position:absolute;inset:auto 0 0 0;height:70px;background:repeating-linear-gradient(90deg,transparent 0 5px,rgba(201,242,77,.25) 5px 6px);mask:linear-gradient(transparent,black)}
+    .visual-lines{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 26px,color-mix(in srgb,var(--accent) 7%,transparent) 26px 27px)}
+    .signal-rings{position:absolute;inset:0;background:radial-gradient(circle at 78% 30%,color-mix(in srgb,var(--accent) 18%,transparent) 0 2px,transparent 3px),radial-gradient(circle at 78% 30%,transparent 14px,color-mix(in srgb,var(--accent) 12%,transparent) 15px 16px,transparent 17px),radial-gradient(circle at 78% 30%,transparent 30px,color-mix(in srgb,var(--accent) 9%,transparent) 31px 32px,transparent 33px)}
+    .waveform{position:absolute;inset:auto 0 0 0;height:70px;background:repeating-linear-gradient(90deg,transparent 0 5px,color-mix(in srgb,var(--accent) 25%,transparent) 5px 6px);mask:linear-gradient(transparent,black)}
     .iot-nodes{position:absolute;inset:0}
     .iot-nodes i{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:.7}
     .iot-nodes i:nth-child(1){top:24%;left:16%}.iot-nodes i:nth-child(2){top:60%;left:38%}.iot-nodes i:nth-child(3){top:30%;left:62%}.iot-nodes i:nth-child(4){top:64%;left:82%}
@@ -147,6 +147,30 @@
     .skill-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
     .skill-list span{border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.8rem;color:var(--text)}
 
+    /* contact + footer */
+    .contact-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--accent);margin-bottom:18px;text-transform:uppercase}
+    .contact-title{font-size:clamp(2.2rem,6vw,4.2rem);font-weight:800;line-height:1.05;margin-bottom:40px}
+    .contact-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+    .contact-bottom p{color:var(--muted);max-width:420px}
+    .email-link{font-family:var(--mono);font-size:1rem;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:4px;overflow-wrap:anywhere}
+    .social-links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:44px;font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+    .social-links a{color:var(--muted);transition:color .2s;display:inline-flex;align-items:center}
+    .social-links a:hover{color:var(--accent)}
+    .site-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--muted);flex-wrap:wrap;text-transform:uppercase}
+    .site-footer a:hover{color:var(--accent)}
+    .footer-links{display:flex;gap:20px}
+
+
+    /* project photos: drop assets/project-*.jpg to replace the pattern art */
+    .project-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .project-visual.has-photo b,.project-visual.has-photo .visual-lines,.project-visual.has-photo .signal-rings,.project-visual.has-photo .waveform,.project-visual.has-photo .iot-nodes{display:none}
+    .project-visual.has-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,17,15,.55),transparent 55%);z-index:1}
+
+    /* education pictures */
+    .edu-logo,.edu-photo,.edu-fallback{width:72px;height:72px;border-radius:50%;flex-shrink:0}
+    .edu-photo{object-fit:cover;border:1px solid var(--line)}
+    .edu-fallback{display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--accent);font-family:var(--mono);font-size:.8rem;letter-spacing:.06em}
+
     /* certificates */
     .cert-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
     .cert-filters button{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;background:none;color:var(--text);border:1px solid var(--line);border-radius:99px;padding:9px 16px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
@@ -154,7 +178,7 @@
     .cert-filters button[aria-pressed="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
     .cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
     .cert-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
-    .cert-card:hover{transform:translateY(-4px);border-color:rgba(201,242,77,.4)}
+    .cert-card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
     .cert-media{display:grid;place-items:center;aspect-ratio:4/3;background:var(--bg-soft);border-bottom:1px solid var(--line);overflow:hidden;color:var(--accent)}
     .cert-media img{width:100%;height:100%;object-fit:cover}
     .cert-media svg{width:56px;height:56px}
@@ -166,29 +190,7 @@
     .cert-verify:hover{text-decoration:underline;text-underline-offset:4px}
     .cert-empty{color:var(--muted)}
 
-    /* contact + messaging section */
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-    .contact-form{display:flex;flex-direction:column;gap:16px;background:var(--card);padding:24px;border:1px solid var(--line);border-radius:20px}
-    .contact-form label{font-family:var(--mono);font-size:.75rem;text-transform:uppercase;color:var(--muted)}
-    .contact-form input, .contact-form textarea{background:var(--bg);border:1px solid var(--line);padding:12px;border-radius:8px;color:var(--text);font-family:var(--sans)}
-    .contact-form textarea{resize:vertical}
-    .contact-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--accent);margin-bottom:18px;text-transform:uppercase}
-    .contact-title{font-size:clamp(2.2rem,6vw,4.2rem);font-weight:800;line-height:1.05;margin-bottom:40px}
-    .email-link{font-family:var(--mono);font-size:1rem;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:4px;overflow-wrap:anywhere}
-    .social-links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:44px;font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-    .social-links a{color:var(--muted);transition:color .2s;display:inline-flex;align-items:center}
-    .social-links a:hover{color:var(--accent)}
-
-    .site-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 28px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--muted);flex-wrap:wrap;text-transform:uppercase}
-    .site-footer a:hover{color:var(--accent)}
-
-    /* project photos / cv */
-    .project-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-    .project-visual.has-photo b,.project-visual.has-photo .visual-lines,.project-visual.has-photo .signal-rings,.project-visual.has-photo .waveform,.project-visual.has-photo .iot-nodes{display:none}
-    .project-visual.has-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(16,17,15,.55),transparent 55%);z-index:1}
-    .edu-logo,.edu-photo,.edu-fallback{width:72px;height:72px;border-radius:50%;flex-shrink:0}
-    .edu-photo{object-fit:cover;border:1px solid var(--line)}
-    .edu-fallback{display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--accent);font-family:var(--mono);font-size:.8rem;letter-spacing:.06em}
+    /* cv */
     .cv-card{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px}
     .cv-icon{width:64px;height:64px;color:var(--accent)}
     .cv-card h3{font-size:1.25rem;margin-bottom:6px}
@@ -198,24 +200,37 @@
     .pill-solid:hover{background:transparent;color:var(--accent)}
     .cv-actions[hidden]{display:none}
 
-    @media(max-width:900px){
-      .contact-grid{grid-template-columns:1fr}
-    }
+    /* contact form */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .contact-form{display:flex;flex-direction:column;gap:16px;background:var(--card);padding:24px;border:1px solid var(--line);border-radius:20px}
+    .contact-form .field{display:flex;flex-direction:column;gap:6px}
+    .contact-form label{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .contact-form input,.contact-form textarea{background:var(--bg);border:1px solid var(--line);padding:12px;border-radius:8px;color:var(--text);font-family:var(--sans);font-size:1rem}
+    .contact-form textarea{resize:vertical;min-height:120px}
+    .contact-form .pill-solid{justify-content:center;margin-top:8px;border:1px solid var(--accent)}
+    .contact-note{color:var(--muted);margin-bottom:24px}
+    .local-time{margin-top:30px;font-family:var(--mono);font-size:.8rem;color:var(--accent)}
+
     @media(max-width:1060px){
       .menu-toggle{display:flex}
       .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:18px;padding:22px 28px 26px;background:var(--bg);border-bottom:1px solid var(--line)}
       .nav-links.open{display:flex}
     }
     @media(max-width:860px){
-      .about-grid,.education-grid,.project-grid,.achievement-grid{grid-template-columns:1fr}
+      .about-grid,.education-grid,.project-grid,.achievement-grid,.contact-grid{grid-template-columns:1fr}
       .about-portrait,.portrait-fallback{width:min(240px,80%);height:auto;margin-inline:auto}
       .hero-bottom{flex-direction:column;align-items:flex-start}
       .about-meta{grid-template-columns:1fr}
       .topline-year{display:none}
       .cv-card{grid-template-columns:1fr;gap:18px}
     }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *{transition-duration:.01ms!important}
+    }
   </style>
   <script>
+    (function () { try { if (localStorage.getItem('theme') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {} })();
     function fb(img, text) {
       var d = document.createElement('div');
       d.className = 'edu-fallback';
@@ -246,7 +261,7 @@
       <a href="#certificates">Certificates</a>
       <a href="#cv">CV</a>
       <a href="#contact" class="nav-contact">Let's talk</a>
-      <button id="theme-toggle" class="pill" type="button" aria-label="Toggle light/dark mode" style="padding:6px 12px; font-size:0.65rem;">Theme</button>
+      <button id="theme-toggle" class="pill" type="button" aria-label="Switch to light mode" style="padding:6px 12px;font-size:.65rem">Light</button>
     </nav>
   </header>
 
@@ -287,6 +302,7 @@
       <div class="section-heading"><span class="section-number">02</span><h2>Selected <span class="muted">work.</span></h2></div>
       <p class="section-lead">Academic, research, and hands-on engineering work. Code and write-ups live on my GitHub.</p>
       <div class="project-grid">
+
         <article class="project-card">
           <div class="project-visual has-img"><span>01</span><img src="assets/umrt-logo.webp" alt="UIU Mars Rover Team badge" width="360" height="360" loading="lazy"></div>
           <div class="project-info">
@@ -366,6 +382,7 @@
             <div class="project-links"><a href="https://github.com/SabbirLab" target="_blank" rel="noopener noreferrer">Browse GitHub<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a></div>
           </div>
         </article>
+
       </div>
     </section>
 
@@ -381,6 +398,7 @@
     <section class="achievements section-wrap section-pad" id="achievements">
       <div class="section-heading"><span class="section-number">04</span><h2>Milestones and <span class="muted">recognition.</span></h2></div>
       <div class="achievement-grid">
+
         <article class="achievement-card">
           <div class="achievement-media"><img src="assets/urc-2026.jpg" alt="UIU Mars Rover Team celebrating with Bangladesh and UIU flags next to the rover at URC 2026" width="1469" height="1231" loading="lazy"></div>
           <div class="achievement-body">
@@ -418,6 +436,7 @@
             <p>Recipient of a 25% tuition waiver at United International University.</p>
           </div>
         </article>
+
       </div>
       <p class="small-note">Team competition achievements are listed as team results, not individual awards.</p>
     </section>
@@ -471,43 +490,30 @@
       </div>
     </section>
 
-    <!-- Messaging / Contact Section with Live Local Time -->
     <section class="contact section-wrap section-pad" id="contact">
       <div class="contact-kicker">Have a project, idea, or opportunity?</div>
       <h2 class="contact-title">Let's make<br>something <span class="accent">matter.</span></h2>
       <div class="contact-grid">
         <div>
-          <p style="color:var(--muted); margin-bottom:24px;">I'm open to meaningful conversations around engineering, research, robotics, and collaboration. Send me a message or reach out via email.</p>
+          <p class="contact-note">I'm open to meaningful conversations around engineering, research, robotics, and collaboration. Send a message or reach out by email.</p>
           <a class="email-link" href="mailto:sahmedeee7@gmail.com">sahmedeee7@gmail.com</a>
-          
-          <div style="margin-top:30px; font-family:var(--mono); font-size:0.8rem; color:var(--accent);">
-            Local Time (Dhaka): <span id="time-text">Loading...</span>
-          </div>
-
+          <div class="local-time">Local time in Dhaka: <span id="time-text">--:--:--</span></div>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/sabbirahmed360/" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
             <a href="https://github.com/SabbirLab" target="_blank" rel="noopener noreferrer">GitHub<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
             <a href="https://www.instagram.com/yes_sabbir/" target="_blank" rel="noopener noreferrer">Instagram<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
             <a href="https://x.com/yes_sabbir" target="_blank" rel="noopener noreferrer">X<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
-            <a href="https://www.facebook.com/uiumarsrover/" target="_blank" rel="noopener noreferrer">UIU Mars Rover<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+            <a href="https://www.facebook.com/s.ahmed360/" target="_blank" rel="noopener noreferrer">Facebook<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
           </div>
         </div>
 
-        <!-- Functional Message Form (Change action to your Formspree endpoint if desired) -->
+        <!-- Replace your-form-id with your real Formspree form ID. Until then the form opens your email app. -->
         <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <label>Your Name</label>
-            <input type="text" name="name" required>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <label>Your Email</label>
-            <input type="email" name="email" required>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <label>Message</label>
-            <textarea name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="pill pill-solid" style="cursor:pointer; justify-content:center; margin-top:8px;">Send Message</button>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Your email</label><input id="f-email" type="email" name="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" required></textarea></div>
+          <button type="submit" class="pill pill-solid">Send message</button>
         </form>
       </div>
     </section>
@@ -519,68 +525,56 @@
     <a href="#home" style="display:inline-flex;align-items:center">Back to top<svg class="ic" aria-hidden="true"><use href="#i-up"/></svg></a>
   </footer>
 
-  <!-- Link your certificate data script -->
   <script src="certificates.js"></script>
-  
   <script>
     (function () {
+      "use strict";
+      function $(id) { return document.getElementById(id); }
+
+      /* ---- mobile menu ---- */
       var toggle = document.querySelector(".menu-toggle");
-      var nav = document.getElementById("site-nav");
+      var nav = $("site-nav");
       function setMenu(open) {
         nav.classList.toggle("open", open);
         toggle.setAttribute("aria-expanded", String(open));
         toggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
       }
-      if (toggle) {
-        toggle.addEventListener("click", function () { setMenu(!nav.classList.contains("open")); });
-        nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
-      }
+      toggle.addEventListener("click", function () { setMenu(!nav.classList.contains("open")); });
+      nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape" && nav.classList.contains("open")) { setMenu(false); toggle.focus(); }
       });
 
-      /* --- Dark / Light Mode Toggle Handler --- */
-      var themeToggleBtn = document.getElementById("theme-toggle");
-      if (themeToggleBtn) {
-        var currentTheme = localStorage.getItem("theme") || "dark";
-        if (currentTheme === "light") {
-          document.documentElement.setAttribute("data-theme", "light");
-          themeToggleBtn.textContent = "Dark";
-        } else {
-          themeToggleBtn.textContent = "Light";
-        }
-        themeToggleBtn.addEventListener("click", function () {
-          var isLight = document.documentElement.getAttribute("data-theme") === "light";
-          if (isLight) {
-            document.documentElement.removeAttribute("data-theme");
-            localStorage.setItem("theme", "dark");
-            themeToggleBtn.textContent = "Light";
-          } else {
-            document.documentElement.setAttribute("data-theme", "light");
-            localStorage.setItem("theme", "light");
-            themeToggleBtn.textContent = "Dark";
-          }
-        });
+      /* ---- light / dark theme ---- */
+      var themeBtn = $("theme-toggle");
+      var themeMeta = document.querySelector('meta[name="theme-color"]');
+      function applyTheme(t) {
+        if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+        else document.documentElement.removeAttribute("data-theme");
+        themeBtn.textContent = t === "light" ? "Dark" : "Light";
+        themeBtn.setAttribute("aria-label", t === "light" ? "Switch to dark mode" : "Switch to light mode");
+        if (themeMeta) themeMeta.setAttribute("content", t === "light" ? "#f4f5f0" : "#10110f");
       }
+      applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark");
+      themeBtn.addEventListener("click", function () {
+        var next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+        applyTheme(next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
 
-      /* --- Live Dhaka Time Clock --- */
-      var timeEl = document.getElementById("time-text");
-      if (timeEl) {
-        function updateTime() {
-          var now = new Date();
-          timeEl.textContent = now.toLocaleTimeString('en-US', { timeZone: 'Asia/Dhaka', hour: '2-digit', minute: '2-digit', second: '2-digit' });
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
+      /* ---- Dhaka clock ---- */
+      var timeEl = $("time-text");
+      function tick() {
+        timeEl.textContent = new Date().toLocaleTimeString("en-US", { timeZone: "Asia/Dhaka", hour: "2-digit", minute: "2-digit", second: "2-digit" });
       }
+      tick();
+      setInterval(tick, 1000);
 
-      /* --- Certificates Renderer Script --- */
-      var grid = document.getElementById("cert-grid");
-      if (grid) {
-        var filters = document.getElementById("cert-filters");
-        var empty = document.getElementById("cert-empty");
+      /* ---- certificates (built from certificates.js) ---- */
+      function renderCertificates() {
+        var grid = $("cert-grid"), filters = $("cert-filters"), empty = $("cert-empty");
         var list = (window.CERTIFICATES || []).slice();
-        if (!list.length) { if (empty) empty.hidden = false; return; }
+        if (!list.length) { empty.hidden = false; return; }
         list.sort(function (a, b) { return String(b.date || "").localeCompare(String(a.date || "")); });
         var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
         var ICON = '<svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h26l12 12v44H14z"/><path d="M40 4v12h12"/><path d="M22 30h22M22 38h22M22 46h14"/></svg>';
@@ -631,7 +625,7 @@
         }
         var cats = ["All"];
         list.forEach(function (c) { if (c.category && cats.indexOf(c.category) < 0) cats.push(c.category); });
-        if (cats.length > 2 && filters) {
+        if (cats.length > 2) {
           filters.hidden = false;
           cats.forEach(function (cat, i) {
             var b = el("button", "", cat);
@@ -647,21 +641,31 @@
         }
         render("All");
       }
+      renderCertificates();
 
-      var yearEl = document.getElementById("year");
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
+      /* ---- footer year ---- */
+      $("year").textContent = new Date().getFullYear();
 
+      /* ---- hide CV buttons if file is missing (online only) ---- */
       if (location.protocol !== "file:") {
         fetch("assets/Sabbir-Ahmed-CV.pdf", { method: "HEAD" }).then(function (r) {
           if (!r.ok) throw 0;
         }).catch(function () {
-          var a = document.getElementById("cv-actions");
-          if (a) {
-            a.hidden = true;
-            if (a.parentNode.querySelector("p")) {
-              a.parentNode.querySelector("p").textContent = "CV available on request. Send me an email.";
-            }
-          }
+          var a = $("cv-actions");
+          a.hidden = true;
+          a.parentNode.querySelector("p").textContent = "CV available on request. Send me an email.";
+        });
+      }
+
+      /* ---- contact form: until a real Formspree ID is set, open the email app ---- */
+      var form = document.querySelector(".contact-form");
+      if (form && /your-form-id/.test(form.getAttribute("action") || "")) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var f = new FormData(form);
+          var subject = "Portfolio message from " + f.get("name");
+          var body = f.get("message") + "\n\nFrom: " + f.get("name") + " (" + f.get("email") + ")";
+          window.location.href = "mailto:sahmedeee7@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
         });
       }
     })();
