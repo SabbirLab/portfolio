@@ -69,7 +69,7 @@ window.CERTIFICATES = [
   {
     title: "Robo-Soccer Participation",
     issuer: "UIU CSE FEST 2025 (United International University) ",
-    date: "May,2026",
+    date: "Janury,2025",
     category: "Robo Soccer",
     file: "robo_soccer_certificate.png",
     link: "https://csefest.uiu.ac.bd/"
