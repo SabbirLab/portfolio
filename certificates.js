@@ -69,9 +69,17 @@ window.CERTIFICATES = [
   {
     title: "Robo-Soccer Participation",
     issuer: "UIU CSE FEST 2025 (United International University) ",
-    date: "Janury,2025",
+    date: "January,2025",
     category: "Robo Soccer",
     file: "robo_soccer_certificate.png",
     link: "https://csefest.uiu.ac.bd/"
+  },
+  {
+    title: "Visiting Semiconductor and Robotics Innovation ",
+    issuer: "Bangladesh BEAR Summit 2025",
+    date: "July,2025",
+    category: "Visiting Site",
+    file: "bear_summit.png",
+    link: "https://v0-bangladesh-bear-summit.vercel.app/"
   }
 ];
