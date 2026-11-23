@@ -65,5 +65,13 @@ window.CERTIFICATES = [
     category: "GP Academy",
     file: "certificate-ai-powered-communication.jpg",
     link: "https://www.grameenphone.academy/cert/8acb2788c672"
+  },
+  {
+    title: "Robo-Soccer Participation",
+    issuer: "UIU CSE FEST 2025 (United International University) ",
+    date: "May,2026",
+    category: "Robo Soccer",
+    file: "robo_soccer_certificate.png",
+    link: "https://csefest.uiu.ac.bd/"
   }
 ];
